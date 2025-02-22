@@ -358,7 +358,7 @@ screen navigation():
 
                 textbutton _("<Main Menu>") action MainMenu()
 
-            textbutton _("<About>") action ShowMenu("about")
+            textbutton _("<Credits>") action ShowMenu("about")
 
             if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -603,7 +603,11 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n")
+
+            text _("Pressure was made by Zeal. We do not own any of the concept outside of the game itself. Special thanks to Zeal for allowing this game to be made.\n")
+
+            text _("Lead Developer: Akivaq")
 
 
 style about_label is gui_label
